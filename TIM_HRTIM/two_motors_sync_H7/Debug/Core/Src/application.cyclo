@@ -1,0 +1,6 @@
+../Core/Src/application.c:26:16:clamp_pct_10_90	3
+../Core/Src/application.c:37:17:pct_to_ccr	1
+../Core/Src/application.c:49:13:Apply_DebugDuties	1
+../Core/Src/application.c:60:6:App_Run	4
+../Core/Src/application.c:92:6:MotorTimers_SyncStart	8
+../Core/Src/application.c:126:6:MotorTimers_Stop	1

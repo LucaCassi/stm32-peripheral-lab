@@ -1,0 +1,9 @@
+This example is developed keeping in mind the same motor application as the H753 project with two synchronized motors.
+
+In my personal opinion, using an HRTIM to synchronize two motors may be an overkill. Please refer to the other project for a more realistic, real-life use case.
+
+Many features of the HRTIM are intentionally disabled (such as some high-resolution options that are enabled by default) in order to keep the focus on synchronization rather than on advanced HRTIM features. In a certain way, this means partially missing the main goal of the lab. However, for me it was much more effective to keep focusing on motor-related applications, for several reasons. This project may be extended in the next months.
+
+The choice of using a different MCU (G474 instead of H753) compared to the first project is related to the availability of HRTIM slave timers in the two microcontrollers. The H753 has only five slave timers, and trying to use them to drive two three-phase motors would be too unrealistic to be meaningful, even for a lab dedicated to “experiments with peripherals”.
+
+For additional insights, compare both projects in the TIM_HRTIM folder, or feel free to contact me directly.

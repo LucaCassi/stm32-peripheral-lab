@@ -1,0 +1,6 @@
+../Core/Src/application.c:41:16:clamp_pct_10_90	3
+../Core/Src/application.c:53:17:pct_to_cmp_ticks	1
+../Core/Src/application.c:68:13:Apply_DutyIfChanged	13
+../Core/Src/application.c:136:6:App_Run	5
+../Core/Src/application.c:188:6:MotorHRTIM_SyncStart	4
+../Core/Src/application.c:225:6:MotorHRTIM_Stop	1

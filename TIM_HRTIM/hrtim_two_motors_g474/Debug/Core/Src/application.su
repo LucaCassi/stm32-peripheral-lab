@@ -1,0 +1,6 @@
+../Core/Src/application.c:41:16:clamp_pct_10_90	16	static
+../Core/Src/application.c:53:17:pct_to_cmp_ticks	24	static
+../Core/Src/application.c:68:13:Apply_DutyIfChanged	32	static
+../Core/Src/application.c:136:6:App_Run	16	static
+../Core/Src/application.c:188:6:MotorHRTIM_SyncStart	16	static
+../Core/Src/application.c:225:6:MotorHRTIM_Stop	16	static
