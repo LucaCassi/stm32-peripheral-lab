@@ -60,8 +60,8 @@ all: main-build
 main-build: TestCANbus.elf secondary-outputs
 
 # Tool invocations
-TestCANbus.elf TestCANbus.map: $(OBJS) $(USER_OBJS) C:\Users\luccas\Documents\TestCANbus\STM32G474VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "TestCANbus.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\luccas\Documents\TestCANbus\STM32G474VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TestCANbus.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+TestCANbus.elf TestCANbus.map: $(OBJS) $(USER_OBJS) C:\Users\luccas\Documents\stm32-peripheral-lab\FDCAN\TestCANbus\STM32G474VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "TestCANbus.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\luccas\Documents\stm32-peripheral-lab\FDCAN\TestCANbus\STM32G474VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TestCANbus.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

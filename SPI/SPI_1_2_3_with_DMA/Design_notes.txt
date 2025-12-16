@@ -1,0 +1,11 @@
+The Chip Select is managed by software for all SPI instances. For this reason, in CubeMX I configured a generic GPIO output for each peripheral. A good abstraction layer should encapsulate both the SPI handle and the associated Chip Select pin.
+
+Practical note: all SPI-related pins should be configured with "High Speed" GPIO setting. To avoid false communication during boot-up, the Chip Select GPIO default level should be set to High, which is the inactive state for most SPI devices.
+
+DMA usage with SPI seems to be uncommon in sensor or control applications, and circular mode is not the default choice as it is for ADC peripherals. In this project, SPI3 is configured with DMA but not in circular mode, mainly for demonstration purposes. In many real applications, DMA is not required.
+
+The STM32H7 family may introduce cache-related behaviors that are not always immediately visible when using DMA: data received via DMA may not be immediately coherent from the CPU point of view unless cache maintenance is handled explicitly. This aspect has been intentionally neglected in this project to keep the focus on peripheral configuration.
+
+Interestingly, I have rarely seen SPI applications using CRC calculation in practice. For this reason, CRC has not been used here either.
+
+Note: this project is inspired by a similar application deployed by a team I worked with, but it cannot be considered plug-and-play in any way. When using SPI to communicate with sensors or external boards, it is always mandatory to refer to the device datasheet, since communication parameters and initialization sequences may vary significantly from one device to another.

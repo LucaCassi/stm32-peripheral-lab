@@ -1,0 +1,13 @@
+../Core/Src/spi_app.c:16:6:spi_app_initStruct	24	static
+../Core/Src/spi_app.c:40:6:spi_app_cs_low	16	static
+../Core/Src/spi_app.c:48:6:spi_app_cs_high	16	static
+../Core/Src/spi_app.c:56:19:spi_app_write	32	static
+../Core/Src/spi_app.c:67:19:spi_app_read	40	static
+../Core/Src/spi_app.c:87:19:spi_app_transfer	40	static
+../Core/Src/spi_app.c:98:19:spi_app_transfer_dma	32	static
+../Core/Src/spi_app.c:126:19:spi_app_write_dma	32	static
+../Core/Src/spi_app.c:154:19:spi_app_read_dma	32	static
+../Core/Src/spi_app.c:184:6:spi_app_dma_cplt	16	static
+../Core/Src/spi_app.c:197:6:spi_app_dma_error	16	static
+../Core/Src/spi_app.c:207:6:spi_app_cache_clean	16	static
+../Core/Src/spi_app.c:223:6:spi_app_cache_invalidate	16	static
