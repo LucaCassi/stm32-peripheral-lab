@@ -1,0 +1,5 @@
+../Core/Src/can_module.c:66:6:can_module_init	3
+../Core/Src/can_module.c:109:6:can_module_transmit	3
+../Core/Src/can_module.c:139:13:can_module_error_handler	3
+../Core/Src/can_module.c:164:6:HAL_FDCAN_ErrorStatusCallback	8
+../Core/Src/can_module.c:207:6:HAL_FDCAN_RxFifo0Callback	5

@@ -1,0 +1,14 @@
+This project was used to help debug a CANBUS architecture where two boards gave random error which affected normal operations.
+
+Most of the parameters are kept as in the original architecture, as well as most of the functions in the code, making this project the closest one to being "plug-and-play" uploaded so far.
+
+For this reason, the FDCAN configuration is rich but at the same time quite canonical. The can_module code is here intended for debug only, but it is well suited to being integrated into a more complete and advanced canbus abstaction layer.
+
+
+This project was used to help debug a CANBUS architecture where two boards were showing apparently random errors that affected normal operation.
+
+Most of the parameters are kept the same as in the original system, and most of the functions come directly from the original code. Because of this, this project is probably the closest one so far to being really "plug-and-play" when uploaded on the target board.
+
+For this reason, the FDCAN configuration may look a bit rich, but it is still quite canonical and close to what is typically used in industrial setups.
+
+The can_module code is meant mainly for debug purposes. However, during development it turned out to be reasonably clean and structured, and it could be reused or integrated into a more complete and advanced CAN bus abstraction layer with relatively small changes.

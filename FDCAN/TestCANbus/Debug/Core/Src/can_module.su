@@ -1,5 +1,0 @@
-../Core/Src/can_module.c:42:6:can_module_init	24	static
-../Core/Src/can_module.c:78:6:can_module_transmit	24	static
-../Core/Src/can_module.c:100:6:can_module_error_handler	24	static
-../Core/Src/can_module.c:116:6:HAL_FDCAN_ErrorStatusCallback	24	static
-../Core/Src/can_module.c:143:6:HAL_FDCAN_RxFifo0Callback	24	static
