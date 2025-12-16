@@ -1,0 +1,13 @@
+I strongly reworked an already existing and previously used project of mine for this demonstration.  
+All settings and parameters are intended to be technically reasonable, even though the overall configuration is highly specific and would not be directly deployable on a different board or project without a certain level of adaptation.
+
+I intentionally included most of the features and configurations that I have encountered in industrial applications.
+
+In particular, the oversampling configuration and the different sampling times are not chosen by chance:  
+the goal is to (almost) saturate the DMA channel, under the assumption that the injected conversions are triggered at approximately 16 kHz, which is a reasonable order of magnitude for a high-precision Field-Oriented Motor Control application.
+
+This approach is deliberately stress-oriented and meant to reason about timing margins, DMA contention, and system-level trade-offs rather than to represent a production-ready configuration.
+
+Regarding the application-level code (adc_app.h / adc_app.c), it should be considered a first-pass integration rather than a finalized abstraction layer.
+The API and parameter consistency would benefit from an additional review before being reused as a generic or reusable module. In particular, the choice and grouping of input parameters is not always uniform, and the overall code structure reflects a merge of manually written logic and auto-generated code.
+

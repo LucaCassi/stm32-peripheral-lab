@@ -1,0 +1,12 @@
+../Core/Src/adc_app.c:26:6:adc_app_init	16	static
+../Core/Src/adc_app.c:32:19:adc_app_start	8	static
+../Core/Src/adc_app.c:44:19:adc_app_stop	8	static
+../Core/Src/adc_app.c:52:6:adc_app_frame_available	4	static
+../Core/Src/adc_app.c:57:6:adc_app_get_latest_frame	16	static,ignoring_inline_asm
+../Core/Src/adc_app.c:66:19:adc_app_trigger_injected_it	8	static
+../Core/Src/adc_app.c:73:6:adc_app_injected_available	4	static
+../Core/Src/adc_app.c:78:9:adc_app_get_injected_latest	4	static
+../Core/Src/adc_app.c:84:26:adc_app_get_dma_buffer	4	static
+../Core/Src/adc_app.c:92:6:HAL_ADC_ConvHalfCpltCallback	24	static
+../Core/Src/adc_app.c:104:6:HAL_ADC_ConvCpltCallback	24	static
+../Core/Src/adc_app.c:117:6:HAL_ADCEx_InjectedConvCpltCallback	24	static
